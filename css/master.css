@@ -1,186 +1,183 @@
 @charset "UTF-8";
 body{
     margin: 0;
-    font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
-    1em;
+    font-family: 'Montserrat', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
 }
-.container{
+
+/*------------- MAIN SECTION -------------*/
+
+#main-section{
     background-image: url('../img/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: 100%;
     max-height: 100%;
-    font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
-    color: rgb( 116, 124, 131 );
-}
-.content, .menu-content{
-    width: 75%;
-    display: flex;
-    margin: 0 auto;
+    color: rgb(255, 255, 255);
 }
 
-h2{
-    font-weight: normal;
-    color: #000000;
+.container{
+    margin: 0 auto;
+    padding: 1rem;
 }
-.formulario{
-    margin-top: 20px;
+#main-section .space-bottom{
+    padding-bottom: 0;
+}
+
+#main-section .space-top{
+    padding-top: 7rem;
+}
+.container-flex{
     display: flex;
-    background-color: white;
-    min-width: 280px;
-    max-width: 500px;
-    width: 80%;
     justify-content: center;
-    box-sizing: border-box;
-    border-radius: 1.5%;
-    flex-wrap: nowrap;
+}
+.navbar, .navbar.navbar-default{
+    background-color: transparent;
 }
 
-
-/*--------------------------------------------------------------------------*/
-
-/*--------------------------- HEADER / FOOTER ------------------------------*/
-
-/*--------------------------------------------------------------------------*/
-header, footer{
+.navbar-brand{
+    padding: 1rem 0;
+}
+.navbar-brand img{
+    width: 10rem;
+}
+.menu nav{
+    width: 100%;
+}
+.ul-flex{
     display: flex;
-    margin: 0 auto;
-    height: 100px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.menu-content{
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
-.content div.logo{
-    background-image: url('../img/logo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    height: 25px;
-    flex-grow: 1;
-    padding: 0;
-    margin-left: 0;
+
+.nav-justified > li{
+    width: auto;
+    margin: 1px;
+    box-sizing: border-box;
 }
-.menu-last{
-    border-width: 1px;
-    background-image: -moz-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
-    border-style: solid;
-    border-radius: 2px;
-}
-.menu{
-    margin: 10px 0 10px 15px;
-    padding: 5px;
-}
+
 .menu a{
-    font-size: .8em;
-    color: rgb( 255, 255, 255 );
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: rgb( 34, 34, 39 );
-}
-
-
-/*--------------------------------------------------------------------------*/
-
-/*------------------------------------ HOME---------------------------------*/
-
-/*--------------------------------------------------------------------------*/
-
-
-.content h1{
-    font-size: 1.6em;
-    color: rgb( 255, 255, 255 );
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.111;
-    text-align: left;
-    margin-top: 50px;
-}
-.fone-hand img{
-    width: 70%;
-    padding-left: 30px;
-}
-.btn-cadastro{
-    margin-left: 0;
-    width: 130px;
-    text-align: center;
-}
-
-/*--------------------------------------------------------------------------*/
-
-/*------------------- FORMULÁRIO DE PREENCHIMENTO DE DADOS -----------------*/
-
-/*--------------------------------------------------------------------------*/
-
-.dados{
-    max-width: 300px;
-    width: 100%;
-    padding: 15px;
-}
-.dados input{
-    max-width: 300px;
-    display: block;
-    border: none;
-    border-bottom: solid 1px #707070;
-    margin: 25px 0;
-    line-height: 2em;
-    width: 100%;
-}
-.dados input:focus{
-    outline: none;
-}
-.campos{
-    box-sizing: border-box;
-}
-button{
-    max-width: 350px;
-    width: 100%;
     color: #FFFFFF;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.menu a:hover{
+    text-decoration: none;
+    background-color: transparent !important;
+    border: 1px solid;
     border-radius: 2px;
-    background-image: -moz-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
-    height: 40px;
-    margin: 25px 0 15px 0;
-    font-size: .75em;
+    -moz-border-image: -moz-linear-gradient(top, #FC913A 0%, #FF4E50 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #FC913A 0%, #FF4E50 100%);
+    border-image: linear-gradient(to bottom, #FC913A 0%, #FF4E50 100%);
+    border-image-slice: 1;
+}
+#main-section p{
+    color: #747C83;
+}
+.bt-cadastro{
     font-weight: bold;
 }
-.form{
-    display: block;
+
+.fone img{
+    width: 90%;
 }
-.texto{
-    box-sizing: border-box;
-    font-size: .7em;
-    max-width: 360px;
+
+
+
+
+
+/*----------- SECTION CONHEÇA A CLICK -------------*/
+
+
+#conheca{
+    background-color: #fff;
+}
+
+#conheca header{
+    background-color: #F8F8F8;
+}
+
+#conheca header p{
+    margin: 10px 0;
+    color: #687077;
+    font-weight: bold;
+}
+
+#conheca header nav{
     width: 100%;
-    padding: 10px;
+}
+
+#conheca header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#conheca .container{
     text-align: center;
 }
-.texto a{
-    text-decoration: none;
-    color: rgb(230,174,15);
+
+#conheca .descricao{
+    float: none;
+    margin: 0 auto;
 }
-.texto a:hover{
-    color: rgb(124,58,27);
+
+#conheca .descricao a{
+    color: #E6AE0F;
+    font-weight: bold;
 }
-/*--------------------------------------------------------------------------*/
 
-/*------------------------ FORMULÁRIO DE PESSOA FISICA ---------------------*/
+#conheca .equipe{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
 
-/*--------------------------------------------------------------------------*/
+#conheca .equipe img{
+    border-radius: 30%;
+    width: 15rem;
+}
 
-.condominio{
-    display: none;
+#conheca .equipe p{
+    display: block;
+    margin: 0.7rem;
+    font-size: 1.1rem;
+    color: #E6AE0F;
+}
+#conheca .equipe h3{
+    margin-top: 0px;
+    font-size: 2rem;
+}
+
+
+
+
+
+/*----------------- COMO FUNCIONA --------------*/
+
+
+#como-funciona{
+    background-color: #fff;
+    padding: 6rem 0;
+}
+
+#como-funciona .bg{
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+#como-funciona .celular{
+    text-align: center;
+}
+
+#como-funciona .celular img{
+    width: 18rem;
+}
+
+.footer{
+    background-color: rgb( 34, 34, 39 );
 }
