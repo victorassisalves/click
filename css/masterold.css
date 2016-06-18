@@ -1,0 +1,187 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    1em;
+}
+.container{
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    color: rgb( 116, 124, 131 );
+}
+.content, .menu-content{
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+}
+
+h2{
+    font-weight: normal;
+    color: #000000;
+}
+.formulario{
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    min-width: 280px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 1.5%;
+    flex-wrap: nowrap;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+/*--------------------------- HEADER / FOOTER ------------------------------*/
+
+/*--------------------------------------------------------------------------*/
+header, footer{
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-content{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content div.logo{
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 25px;
+    flex-grow: 1;
+    padding: 0;
+    margin-left: 0;
+}
+.menu-last{
+    border-width: 1px;
+    background-image: -moz-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
+    border-style: solid;
+    border-radius: 2px;
+}
+.menu{
+    margin: 10px 0 10px 15px;
+    padding: 5px;
+}
+.menu a{
+    font-size: .8em;
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb( 34, 34, 39 );
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+/*------------------------------------ HOME---------------------------------*/
+
+/*--------------------------------------------------------------------------*/
+
+
+.content h1{
+    font-size: 1.6em;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.111;
+    text-align: left;
+    margin-top: 50px;
+}
+.fone-hand img{
+    width: 70%;
+    padding-left: 30px;
+}
+.btn-cadastro{
+    margin-left: 0;
+    width: 130px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*------------------- FORMULÁRIO DE PREENCHIMENTO DE DADOS -----------------*/
+
+/*--------------------------------------------------------------------------*/
+
+.dados{
+    max-width: 300px;
+    width: 100%;
+    padding: 15px;
+}
+.dados input{
+    max-width: 300px;
+    display: block;
+    border: none;
+    border-bottom: solid 1px #707070;
+    margin: 25px 0;
+    line-height: 2em;
+    width: 100%;
+}
+.dados input:focus{
+    outline: none;
+}
+.campos{
+    box-sizing: border-box;
+}
+button{
+    max-width: 350px;
+    width: 100%;
+    color: #FFFFFF;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(124,58,27) 0%, rgb(230,174,15) 100%);
+    height: 40px;
+    margin: 25px 0 15px 0;
+    font-size: .75em;
+    font-weight: bold;
+}
+.form{
+    display: block;
+}
+.texto{
+    box-sizing: border-box;
+    font-size: .7em;
+    max-width: 360px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.texto a{
+    text-decoration: none;
+    color: rgb(230,174,15);
+}
+.texto a:hover{
+    color: rgb(124,58,27);
+}
+/*--------------------------------------------------------------------------*/
+
+/*------------------------ FORMULÁRIO DE PESSOA FISICA ---------------------*/
+
+/*--------------------------------------------------------------------------*/
+
+.condominio{
+    display: none;
+}
